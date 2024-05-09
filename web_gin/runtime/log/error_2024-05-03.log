@@ -1,0 +1,129 @@
+panic error time:2024-05-03 11:34:56
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0x5e
+web_gin/pkg/logger.Recover.func1()
+	f:/go_save/web_gin/pkg/logger/logger.go:139 +0x276
+panic({0x12e45c0?, 0x16a8260?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+web_gin/controllers.UserController.GETList({}, 0xa?)
+	f:/go_save/web_gin/controllers/user.go:23 +0x9
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+web_gin/pkg/logger.Recover(0xc0000ba000)
+	f:/go_save/web_gin/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000139860, 0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66e
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000139860, {0x1416080, 0xc0000b4000}, 0xc000098000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1b2
+net/http.serverHandler.ServeHTTP({0x1414cf0?}, {0x1416080?, 0xc0000b4000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000168750, {0x14169a8, 0xc0004274d0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+
+panic error time:2024-05-03 15:48:22
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0x5e
+web_gin/pkg/logger.Recover.func1()
+	f:/go_save/web_gin/pkg/logger/logger.go:139 +0x276
+panic({0xb645c0?, 0xf28260?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+web_gin/controllers.UserController.GETList({}, 0xa?)
+	f:/go_save/web_gin/controllers/user.go:23 +0x9
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+web_gin/pkg/logger.Recover(0xc0000ba000)
+	f:/go_save/web_gin/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000139ba0, 0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66e
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000139ba0, {0xc96080, 0xc0000b4000}, 0xc000098000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1b2
+net/http.serverHandler.ServeHTTP({0xc94cf0?}, {0xc96080?, 0xc0000b4000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000168900, {0xc969a8, 0xc0004294d0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+
+panic error time:2024-05-03 16:15:10
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0x5e
+web_gin/pkg/logger.Recover.func1()
+	f:/go_save/web_gin/pkg/logger/logger.go:139 +0x276
+panic({0xb745c0?, 0xf38260?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+web_gin/controllers.UserController.GETList({}, 0xa?)
+	f:/go_save/web_gin/controllers/user.go:23 +0x9
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+web_gin/pkg/logger.Recover(0xc0000ba000)
+	f:/go_save/web_gin/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xdd
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000139a00, 0xc0000ba000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66e
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000139a00, {0xca6080, 0xc0000b4000}, 0xc000098000)
+	C:/Users/Mask/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1b2
+net/http.serverHandler.ServeHTTP({0xca4cf0?}, {0xca6080?, 0xc0000b4000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000168750, {0xca69a8, 0xc0004274d0})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:45:45"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:47:23"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:51:45"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:52:43"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:52:55"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 17:57:17"}
+{"level":"error","msg":"[]","mysql connect error":"invalid DSN: missing the slash separating the database name","time":"2024-05-03 18:51:13"}
+{"level":"error","msg":"[]","mysql connect error":"Error 1049: Unknown database 'we_gn'","time":"2024-05-03 19:50:46"}
+{"level":"error","msg":"[]","mysql connect error":"Error 1049: Unknown database 'we_gn'","time":"2024-05-03 19:51:02"}

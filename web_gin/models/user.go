@@ -22,6 +22,11 @@ func GetUserInfoByName(name string) (User, error) {
 	err := dao.Db.Where("name = ?", name).First(&user).Error
 	return user, err
 }
+func GetUserInfoById(id int) (User, error) {
+	var user User
+	err := dao.Db.Where("id = ?", id).First(&user).Error
+	return user, err
+}
 func AddUser(name string, password string) (int, error) {
 	user := User{Name: name, Password: password, AddTime: time.Now().Unix(), UpdateTime: time.Now().Unix()}
 	err := dao.Db.Create(&user).Error

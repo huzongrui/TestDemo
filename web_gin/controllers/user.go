@@ -119,4 +119,5 @@ func (u UserController) Login(c *gin.Context) {
 	sessions.Save()
 	data := UserApi{Id: user.Id, Name: user.Name}
 	returnSuccess(c, 0, "登录成功", data, 1)
+
 }

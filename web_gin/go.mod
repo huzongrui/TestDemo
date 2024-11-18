@@ -1,6 +1,6 @@
 module web_gin
 
-go 1.22.2
+go 1.17
 
 require (
 	github.com/gin-contrib/sessions v1.0.1
